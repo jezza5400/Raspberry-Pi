@@ -2,14 +2,6 @@
 
 This guide provides instructions on how to overclock your Raspberry Pi 4B and 5B models for improved performance. Please note that overclocking may void your warranty and can potentially damage your device if not done carefully.
 
-## Table of Contents
-
-- [Prerequisites](#prerequisites)
-- [Raspberry Pi 4B Overclocking](#raspberry-pi-4b-overclocking)
-- [Raspberry Pi 5B Overclocking](#raspberry-pi-5b-overclocking)
-- [Monitoring and Stability](#monitoring-and-stability)
-- [Troubleshooting](#troubleshooting)
-
 ## Prerequisites
 
 - A Raspberry Pi 4B or 5B
@@ -27,7 +19,7 @@ sudo nano /boot/firmware/config.txt
 
 2. Add the following lines at the end of the file:
 
-```
+```conf
 over_voltage=6 # Voltage boost (default is 0)
 arm_freq=2000 # CPU to 2.0 GHz (default is 1.5 GHz)
 gpu_freq=750 # GPU to 750 MHz (default is 500 MHz)
@@ -51,7 +43,7 @@ sudo nano /boot/firmware/config.txt
 
 2. Add the following lines at the end of the file:
 
-```
+```conf
 over_voltage_delta=50000 # Adds ~0.05V to support higher frequencies
 arm_freq=3000 # CPU to 3.0 GHz (default is 2.4 GHz)
 gpu_freq=1000 # GPU to 1.0 GHz (default ~910 MHz)

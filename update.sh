@@ -12,6 +12,6 @@ case $(awk -F= '/^ID=/{gsub(/"/, "", $2); print $2}' /etc/os-release) in
 		fi
 		;;
 	*)
-		echo "Unrecognised distro"
+		echo "Unsupported distro"
 		;;
 esac
