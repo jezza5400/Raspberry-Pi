@@ -1,4 +1,4 @@
-# Packman pgp corruption process
+# Packman pgp corruption
 
 ## Step 1: Confirm you actually have working internet (not stuck behind a captive portal)
 
